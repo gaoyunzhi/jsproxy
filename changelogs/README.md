@@ -8,6 +8,6 @@
 
 * 2019-05-27 增加 nio.io、sslip.io 后备域名，减少申请失败的几率
 
-* 2019-05-26 安装时自动申请证书（使用 xip.io 域名），安装后即可预览
+* 2019-05-26 安装时自动申请证书（使用 sslip.io 域名），安装后即可预览
 
 * 全新的 URL 模型，取代 [之前版本](https://github.com/EtherDream/jsproxy/tree/first-ver)。[查看详细](v0.0.1.md)

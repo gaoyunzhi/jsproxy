@@ -92,9 +92,9 @@ git clone -b gh-pages --depth=1 https://github.com/EtherDream/jsproxy.git www
 
 * 免费申请：https://www.freenom.com
 
-* 临时测试：`服务器IP.xip.io`
+* 临时测试：`服务器IP.sslip.io`
 
-类似的还有 `nip.io`、`sslip.io`，自动安装脚本默认使用 `xip.io`。
+类似的还有 `nip.io`、`sslip.io`，自动安装脚本默认使用 `sslip.io`。
 
 
 ## 申请证书

@@ -20,7 +20,7 @@ curl https://raw.githubusercontent.com/EtherDream/jsproxy/0.1.0/i.sh | bash
 
 无法满足上述条件，或想了解安装细节，可尝试[手动安装](docs/setup.md)。
 
-测试: `https://服务器IP.xip.io:8443`（具体参考脚本输出）
+测试: `https://服务器IP.sslip.io:8443`（具体参考脚本输出）
 
 
 ### 自定义域名

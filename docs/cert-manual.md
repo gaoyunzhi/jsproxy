@@ -7,7 +7,7 @@
 
 前提条件：公网 IP 能访问 80 端口，设备需要 root 权限
 
-1.输入 `服务器IP.xip.io`
+1.输入 `服务器IP.sslip.io`
 
 2.`Manual Verification` -> `Manually Verify Domain` -> `Download File`
 
@@ -27,23 +27,23 @@ iptables -t nat -I PREROUTING 1 -p tcp --dport 80 -j REDIRECT --to-ports
 
 7.保存证书
 
-`Certificate` 保存到 `~/server/cert/xip.io/cert`
+`Certificate` 保存到 `~/server/cert/sslip.io/cert`
 
-`Private Key` 保存到 `~/server/cert/xip.io/key`
+`Private Key` 保存到 `~/server/cert/sslip.io/key`
 
 编辑文件 `~/server/cert/cert.conf`
 
 ```conf
 listen                8443 ssl http2;
-ssl_certificate       cert/xip.io/cert;
-ssl_certificate_key   cert/xip.io/key;
+ssl_certificate       cert/sslip.io/cert;
+ssl_certificate_key   cert/sslip.io/key;
 ```
 
 重启服务：`~/server/run.sh reload`
 
 8.验证
 
-访问 `https://服务器IP.xip.io:8443/`，没出现证书错误即成功。
+访问 `https://服务器IP.sslip.io:8443/`，没出现证书错误即成功。
 
 9.关闭 80 端口转发
 
@@ -54,7 +54,7 @@ iptables -t nat -D PREROUTING 1
 
 ## 方案 2 —- 通过 DNS 验证
 
-前提条件：拥有域名控制权（`xip.io` 不支持）
+前提条件：拥有域名控制权（`sslip.io` 不支持）
 
 1.输入域名
 

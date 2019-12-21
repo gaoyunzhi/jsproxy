@@ -17,7 +17,7 @@ INSTALL_DIR=/home/jsproxy
 NGX_DIR=$INSTALL_DIR/openresty
 
 DOMAIN_SUFFIX=(
-  xip.io
+  sslip.io
   nip.io
   sslip.io
 )

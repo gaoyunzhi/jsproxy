@@ -22,7 +22,7 @@ curl https://raw.githubusercontent.com/Neilpang/acme.sh/master/acme.sh | INSTALL
 ```bash
 # 服务器公网 IP
 ip=$(curl -s https://api.ipify.org)
-domain=$ip.xip.io
+domain=$ip.sslip.io
 
 dist=~/server/cert/$domain
 mkdir -p $dist
@@ -41,7 +41,7 @@ mkdir -p $dist
   --fullchain-file $dist/ecc.cer
 ```
 
-如果申请失败（例如提示 `rate limit exceeded`），尝试将 `xip.io` 换成 `nip.io`、`sslip.io` 等其他类似的域名。
+如果申请失败（例如提示 `rate limit exceeded`），尝试将 `sslip.io` 换成 `nip.io`、`sslip.io` 等其他类似的域名。
 
 4.生成配置文件：
 
@@ -57,7 +57,7 @@ ssl_certificate_key   cert/$domain/ecc.key;
 
 5.验证
 
-访问 `https://服务器IP.xip.io:8443/`，没出现证书错误即成功。
+访问 `https://服务器IP.sslip.io:8443/`，没出现证书错误即成功。
 
 6.关闭 80 端口转发
 
